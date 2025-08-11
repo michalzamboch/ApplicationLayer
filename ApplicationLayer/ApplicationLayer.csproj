@@ -7,9 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Mediator.Abstractions" Version="3.0.*" />
+      <PackageReference Include="Mediator.SourceGenerator" Version="3.0.*">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
-      <PackageReference Include="Paramore.Brighter" Version="9.9.10" />
-      <PackageReference Include="Paramore.Brighter.Extensions.DependencyInjection" Version="9.9.10" />
     </ItemGroup>
 
 </Project>

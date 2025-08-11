@@ -7,11 +7,11 @@ public static class Bootstrap
 {
     public static ServiceProvider Build()
     {
-        var serviceCollection = new ServiceCollection();
+        var services = new ServiceCollection();
 
-        serviceCollection.AddSingleton<IPersonService, PersonService>();
-        serviceCollection.AddSingleton<IAnotherService, AnotherService>();
+        services.AddSingleton<IPersonService, PersonService>();
+        services.AddSingleton<IAnotherService, AnotherService>();
 
-        return serviceCollection.BuildServiceProvider();
+        return services.BuildServiceProvider();
     }
 }
