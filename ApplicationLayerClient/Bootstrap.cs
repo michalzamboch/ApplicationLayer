@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace ApplicationLayerClient;
 
-public sealed class Bootstrap
+public static class Bootstrap
 {
     public static ServiceProvider Build()
     {
